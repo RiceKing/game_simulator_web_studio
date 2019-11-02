@@ -1,12 +1,15 @@
 import React, { Component} from 'react';
-import ResumesList from './ResumesList.js'
+import ErrorBoundary from './ErrorBoundary.js'
+import LiveCycle from './LiveCycle.js'
 
 class App extends Component {
   render() {
     return (
       <div>
         <h1>Game: Simulator web-studio</h1>
-        <ResumesList />
+        <ErrorBoundary>
+          <LiveCycle />
+        </ErrorBoundary>
       </div>
     );
   }
