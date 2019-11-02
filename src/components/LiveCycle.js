@@ -4,14 +4,14 @@ class LiveCycle extends Component {
   constructor() {
     super()
     this.state = {
-      tick: 100
+      tick: 1
     }
   }
 
   componentDidMount() {
     this.timeID = setInterval(
       () => this.tick(),
-      60
+      1000
     );
   }
 
@@ -21,20 +21,15 @@ class LiveCycle extends Component {
 
   tick() {
     let oldTick = this.state.tick
-    oldTick ?
-      this.setState({
-        tick: oldTick - 1
-      })
-    :
-      this.setState({
-        tick: 100
-      })
+    this.setState({
+      tick: oldTick + 1
+    })
   }
 
   render() {
     return (
       <div className="container">
-        <p>Тик: {this.state.tick}</p>
+        <p>Day: {this.state.tick}</p>
       </div>
     )
   }
