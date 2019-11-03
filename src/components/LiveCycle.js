@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DateFormatCycle from './DateFormatCycle.js'
 
 class LiveCycle extends Component {
   constructor() {
@@ -29,7 +30,7 @@ class LiveCycle extends Component {
   render() {
     return (
       <div className="container">
-        <p>Day: {this.state.tick}</p>
+        <DateFormatCycle day={this.state.tick} />
       </div>
     )
   }
