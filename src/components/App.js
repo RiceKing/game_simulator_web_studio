@@ -10,7 +10,8 @@ class App extends Component {
         <h1>Game: Simulator web-studio</h1>
         <ErrorBoundary>
           <LiveCycle />
-          <ResumesList />
+          <h3>Resumes</h3>
+          <ResumesList count={5}/>
         </ErrorBoundary>
       </div>
     );

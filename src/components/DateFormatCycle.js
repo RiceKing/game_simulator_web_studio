@@ -14,7 +14,7 @@ const DateFormatCycle = ({day=1}) => {
 
   let beautifulDay = Math.floor(
     (day<maxDay) ? day :
-    day - maxDay*(month)
+    day - maxDay*month
   )
 
   return (
