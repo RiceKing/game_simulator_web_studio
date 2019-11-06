@@ -9,7 +9,7 @@ const DateFormatCycle = ({day=1}) => {
 
   let beautifulMonth = Math.round(
     (month<=maxMonth) ? month :
-    (month - maxMonth*(!year ? 1 : year))
+    (month - maxMonth*(year ? year : 1))
   )
 
   let beautifulDay = Math.floor(

@@ -1,7 +1,8 @@
 import React, { Component} from 'react';
 import ErrorBoundary from './ErrorBoundary.js'
 import LiveCycle from './LiveCycle.js'
-import ResumesList from './ResumesList.js'
+import Resumes from './Resumes.js'
+// import WalletBTC from './WalletBTC.js'
 
 class App extends Component {
   render() {
@@ -10,8 +11,7 @@ class App extends Component {
         <h1>Game: Simulator web-studio</h1>
         <ErrorBoundary>
           <LiveCycle />
-          <h3>Resumes</h3>
-          <ResumesList count={5}/>
+          <Resumes />
         </ErrorBoundary>
       </div>
     );
